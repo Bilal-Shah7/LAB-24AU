@@ -27,6 +27,6 @@ int main()
         cout << a[i] << " ";
     }
     cout << endl;
-    cout << "Reversed Values : ";
+    cout << "Reversed array : ";
     reverse(a, n);
 }
