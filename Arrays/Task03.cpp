@@ -1,12 +1,16 @@
 #include <iostream>
 using namespace std;
 
-void reversearrays(int a[])
+void reverse(int a[], int n)
 {
 
-    for (int i = 9; i > -1; i--)
+    int rv[n];
+
+    for (int i = 0; i < n; i++)
     {
-        cout << a[i] << " ";
+
+        rv[i] = a[n - 1 - i];
+        cout << rv[i] << " ";
     }
 }
 
@@ -15,6 +19,7 @@ int main()
 
     int a[10] = {2, 4, 6, 8, 10, 12, 14, 16, 18, 20};
     cout << "Original values : ";
+    int n = sizeof(a) / 4;
 
     for (int i = 0; i < 10; i++)
     {
@@ -23,5 +28,5 @@ int main()
     }
     cout << endl;
     cout << "Reversed Values : ";
-    reversearrays(a);
+    reverse(a, n);
 }
