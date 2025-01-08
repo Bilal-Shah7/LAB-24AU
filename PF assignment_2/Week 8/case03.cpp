@@ -15,7 +15,7 @@ void getSurveyResponses(string responses[], int &numResponses) {
     }
     
     // Clear input buffer before reading strings
-    cin.ignore(numeric_limits<streamsize>::max(), '\n');
+    cin.ignore();
     
     for (int i = 0; i < numResponses; ++i) {
         cout << "Enter response " << (i + 1) << ": ";
